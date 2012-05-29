@@ -1,13 +1,15 @@
-//Main app file.
-//To load a module for the app, place it in the app/ directory that is a
-//sibling to this file. For any third party dependencies, like jQuery,
-//place them in the same directory as this file.
+// For any third party dependencies, like jQuery, place them in the lib folder.
 
-//Example call to start script loading of jquery.js and app/sub.js,
-//assuming they exist in the project:
-
-/*
-requirejs(['jquery', 'app/sub'], function ($, subModule) {
-
+// Configure loading modules from the lib directory,
+// except for 'app' ones, which are in a sibling
+// directory.
+requirejs.config({
+    baseUrl: 'js/lib',
+    paths: {
+        app: '../app'
+    }
 });
-*/
+
+// Start loading the main app file. Put all of
+// your application logic in there.
+requirejs(['app/main']);

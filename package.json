@@ -1,5 +1,5 @@
 {
-    "amd": {
-        "baseUrl": "www/js"
-    }
+  "amd": {
+    "baseUrl": "www/js"
+  }
 }
