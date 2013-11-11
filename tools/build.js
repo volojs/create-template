@@ -1,6 +1,6 @@
 {
     "appDir": "../www",
-    "baseUrl": "js/lib",
+    "baseUrl": "lib",
     "paths": {
         "app": "../app"
     },
