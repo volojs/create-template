@@ -2,7 +2,11 @@ define(function (require) {
     // Load any app-specific modules
     // with a relative require call,
     // like:
-    // var util = require('./util');
+    var messages = require('./messages');
 
-    console.log('Hello world');
+    // Load library/vendor modules using
+    // full IDs, like:
+    var print = require('print');
+
+    print(messages.getHello());
 });
